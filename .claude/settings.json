@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --no-import-alias --use-npm)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --defaults)",
+      "Bash(npx shadcn@latest add input label form select textarea badge card separator dialog sheet tabs tooltip avatar dropdown-menu popover command skeleton progress)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
