@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { updateSession } from "@/lib/supabase/middleware";
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   // Without env vars the Supabase client throws and crashes the proxy,
   // which Vercel surfaces as a 404. Pass through so the app can at least render.
   if (
